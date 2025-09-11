@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// Hook: Auto-scroll chat container when new content is added
 const useAutoScroll = (ref, deps) => {
   useEffect(() => {
     if (ref.current) {
@@ -9,7 +8,6 @@ const useAutoScroll = (ref, deps) => {
   }, deps);
 };
 
-// Reusable Typewriter effect
 const Typewriter = ({ text, onComplete, delay = 25, pause = 250 }) => {
   const [currentText, setCurrentText] = useState('');
   const [index, setIndex] = useState(0);
@@ -31,7 +29,6 @@ const Typewriter = ({ text, onComplete, delay = 25, pause = 250 }) => {
   return <p className="whitespace-pre-line">{currentText}</p>;
 };
 
-// Map chart visualization
 const MapChart = ({ isVisible }) => (
   <div
     className={`w-full h-[250px] bg-cover bg-center rounded-lg shadow-md transition-all duration-500 ease-out transform ${
@@ -89,7 +86,6 @@ const ChatMessage = ({ sender, text, onTypeComplete, showChart }) => {
   );
 };
 
-// App container
 function App() {
   const [step, setStep] = useState(0);
   const chatRef = useRef(null);
