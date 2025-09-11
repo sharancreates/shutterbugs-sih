@@ -1,18 +1,11 @@
+##FloatChat - AI-Powered Conversational Interface for ARGO Ocean Data Discovery and Visualization
 
-# React + Vite
+Oceanographic data is vast, complex, and heterogeneous – ranging from satellite observations to in-situ measurements like CTD casts, Argo floats, and BGC sensors. The Argo program, which deploys autonomous profiling floats across the world’s oceans, generates an extensive dataset in NetCDF format containing temperature, salinity, and other essential ocean variables. Accessing, querying, and visualizing this data requires domain knowledge, technical skills, and familiarity with complex formats and tools. With the rise of AI and Large Language Models (LLMs), especially when combined with modern structured databases and interactive dashboards, it is now feasible to create intuitive, accessible systems that democratize access to ocean data.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Solution
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# shutterbugs-sih
-
-
-2aba70750a62b5c85ab25105177a4fef7f7a892
+− End-to-end pipeline to process ARGO NetCDF data and store it in a relational (PostgreSQL) and vector database (FAISS/Chroma).
+− Backend LLM system that translates natural language into database queries and generates responses using RAG.
+− Frontend dashboard with geospatial visualizations (using Plotly, Leaflet, or Cesium) and tabular summaries to ASCII, NetCDF.
+− Chat interface that understands user intent and guides them through data discovery.
+− Demonstrate a working Proof-of-Concept (PoC) with Indian Ocean ARGO data and future extensibility to in-situ observations (BGC, glider, buoys, etc.), and satellite datasets.
