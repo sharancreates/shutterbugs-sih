@@ -4,6 +4,8 @@ import Features from './components/Features'
 import LiveOceanData from './components/LiveOceanData'
 import HowItWorks from './components/HowItWorks'
 import ChatInterface from './components/ChatInterface'
+import Newsletter from './components/NewsLetter'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <LiveOceanData/>
       <HowItWorks/>
       <ChatInterface/>
+      <Newsletter/>
+      <Footer/>
     </>
   )
 }
