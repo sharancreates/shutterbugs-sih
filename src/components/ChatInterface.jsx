@@ -38,7 +38,7 @@ const MapChart = ({ isVisible }) => (
       isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
     }`}
     style={{
-      backgroundImage: `url(https://www.researchgate.net/profile/Blair-Greenan/publication/332274799/figure/fig3/AS:745751231594504@1554812357583/Annual-mean-temperatures-in-the-Northeast-Pacific-Ocean-off-British-Columbia.ppm)`
+      backgroundImage: `url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnnq-pW0VBykLl3HGeh8i38qnAVbMz_7GNw&s)`
     }}
   >
     <div className="w-full h-full bg-black/40 flex justify-center items-end pb-3">
