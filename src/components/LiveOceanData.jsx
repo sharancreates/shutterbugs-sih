@@ -25,7 +25,7 @@ const LiveOceanData = () => {
           <div className="flex items-center mt-5">
             <span className="text-sm text-white mr-4">Active Floats</span>
             <div className="flex-grow h-2 bg-[#2b354b] rounded-full overflow-hidden mr-4">
-              <div className="h-full bg-[#66d9ef]" style={{ width: '80%' }}></div> {/* Adjust width dynamically */}
+              <div className="h-full bg-[#66d9ef]" style={{ width: '80%' }}></div> 
             </div>
             <span className="text-sm font-bold">3,847</span>
           </div>
